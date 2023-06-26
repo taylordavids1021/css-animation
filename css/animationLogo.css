@@ -1,27 +1,32 @@
  /* The animation code */
 @keyframes animatedSquare {
-  0% {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;
+  0% {background-color: rgb(0, 255, 221);
       transform: rotate(90deg);}
-  75% {background-color: green;
+  75% {background-color: blue;
       border-radius: 100%;}
   100% {background-image: url("/css-animation/img/linkedin.png");
-  transform: translateY(100px) }
+    transform: translateY(90px);}
 }
 
 /* The element to apply the animation to */
 .div:hover {
   width: 224px;
   height: 224px;
-  background-color: red;
+  background-color: rgb(0, 255, 221);
   animation-name: animatedSquare;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;    
   animation-timing-function: ease-in;
   animation-direction: alternate;
 } 
-
-.div img:hover {
-  display: none;
+main {
+  border: 10px;
+  border-style: dotted;
+  border-color: rgb(0, 255, 221);
+  height: 23rem;
+  width: 21rem;
+}
+.div img {
+  width: 0px;
+  height: 0px;
 }
