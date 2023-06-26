@@ -4,7 +4,7 @@
       transform: rotate(90deg);}
   75% {background-color: blue;
       border-radius: 100%;}
-  100% {background-image: url("/css-animation/img/linkedin.png");
+  100% {background-image: url("/img/linkedin.png");
     transform: translateY(90px);}
 }
 
