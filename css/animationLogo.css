@@ -6,11 +6,12 @@
       transform: rotate(90deg);}
   75% {background-color: green;
       border-radius: 100%;}
-  100% {background-image: url("/css-animation/img/linkedin.png");}
+  100% {background-image: url("/css-animation/img/linkedin.png");
+  transform: translateY(100px) }
 }
 
 /* The element to apply the animation to */
-div {
+.div:hover {
   width: 224px;
   height: 224px;
   background-color: red;
@@ -20,3 +21,7 @@ div {
   animation-timing-function: ease-in;
   animation-direction: alternate;
 } 
+
+.div img:hover {
+  display: none;
+}
